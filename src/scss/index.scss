@@ -127,6 +127,10 @@ body {
   margin: 0;
 }
 
+.absolute-center {
+  @include absolute-center();
+}
+
 /* Main Header */
 
 #mainHeader {
