@@ -1,5 +1,6 @@
 @import "./base/_mixins";
 @import "./base/_variables";
+@import "./custom/bootstrap";
 
 /* Main */
 
@@ -88,7 +89,7 @@ body {
 #particles {
   @include width-height(100%, 99vh);
   @include absolute-left-top();
-  z-index: -99;
+  z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -97,6 +98,7 @@ body {
 /* Pages */
 
 .content {
+  z-index: 9;
   position: relative;
   @include width-height(100%, 100vh);
 }
@@ -105,6 +107,24 @@ body {
   color: $white;
   background: transparent;
   display: inline-block;
+}
+
+.content-center {
+  width: 75%;
+  height: 75%;
+  box-sizing: border-box;
+  @include absolute-center();
+}
+
+.skill h5 {
+  font-size: 2.5rem;
+  margin: 0;
+  cursor: default;
+  @include absolute-center();
+}
+
+.row {
+  margin: 0;
 }
 
 /* Main Header */
@@ -116,10 +136,12 @@ body {
 
 #mainHeader h1,
 h2 {
+  @include no-space();
   font-size: 3rem !important;
 }
 
 #mainHeader h2 {
+  margin-top: 1rem;
   background: $white;
   color: $black;
 }
@@ -179,7 +201,17 @@ h2 {
 
 /* Mobile */
 
+@media only screen and (max-width: 1300px) {
+  .skill h5 {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .skill h5 {
+    font-size: 1.25rem;
+  }
+
   .social-links ul li i {
     font-size: 1.25rem;
   }
@@ -222,6 +254,10 @@ h2 {
 }
 
 @media only screen and (max-width: 325px) {
+  .skill h5 {
+    font-size: 1rem;
+  }
+
   #bars {
     top: 15px;
     right: 15px;
