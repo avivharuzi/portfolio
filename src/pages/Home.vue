@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="w-content">
+  <div class="content">
     <app-social-links></app-social-links>
     <div id="mainHeader">
       <h1>AVIV HARUZI</h1>

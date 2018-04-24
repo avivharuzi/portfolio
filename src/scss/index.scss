@@ -1,39 +1,34 @@
+@import "./base/_mixins";
+@import "./base/_variables";
+
 /* Main */
 
 * {
-  cursor: url("../assets/images/tools/cursor.png"), auto;
-  margin: 0;
-  padding: 0;
+  @include no-space();
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  @include width-height(100%, 100vh);
+  @include no-space();
+  background: $black;
 }
 
 /* Navigation */
 
 #nav {
-  height: 100%;
-  width: 100%;
+  @include fullscreen();
   position: fixed;
   overflow-y: hidden;
   z-index: 99;
-  top: 0;
-  left: 0;
+  @include absolute-left-top();
 }
 
 .nav-list {
   text-align: center;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include no-space();
+  @include absolute-center();
 }
 
 .nav-list li {
@@ -44,14 +39,14 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 3rem;
-  color: #fff;
+  color: $white;
   font-weight: 300;
   display: inline-block;
   transition: 0.3s;
 }
 
 .hvr-underline-from-center::before {
-  background: #fff;
+  background: $white;
 }
 
 /* Bars */
@@ -60,16 +55,16 @@ body {
   display: inline-block;
   z-index: 99;
   position: fixed;
-  top: 15px;
+  top: 35px;
   right: 35px;
+  cursor: pointer;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
+  @include width-height(35px, 5px);
+  background-color: $white;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -91,12 +86,8 @@ body {
 /* Particles */
 
 #particles {
-  background: #000;
-  width: 100%;
-  height: 99vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  @include width-height(100%, 99vh);
+  @include absolute-left-top();
   z-index: -99;
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,15 +96,13 @@ body {
 
 /* Pages */
 
-#home {
+.content {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  @include width-height(100%, 100vh);
 }
 
-#home h1,
-h3 {
-  color: #fff;
+.content h1, h3 {
+  color: $white;
   background: transparent;
   display: inline-block;
 }
@@ -121,12 +110,8 @@ h3 {
 /* Main Header */
 
 #mainHeader {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+  @include absolute-center();
+  color: $white;
 }
 
 #mainHeader h1,
@@ -135,68 +120,124 @@ h2 {
 }
 
 #mainHeader h2 {
-  background: #fff;
-  color: #000;
+  background: $white;
+  color: $black;
 }
 
 /* Social Media */
 
 .social-links {
-  position: absolute;
-  top: 15px;
-  left: 35px;
+  @include absolute-left-top(35px, 35px);
+  margin-top: 5px;
 }
 
 .social-links ul {
-  padding: 0;
-  margin: 0;
+  @include no-space();
 }
 
 .social-links ul li {
   position: relative;
   float: left;
-  padding: 15px;
+  margin: 0;
   margin-right: 20px;
+  list-style-type: none;
+}
+
+.social-links ul li a {
+  padding: 15px;
   text-align: center;
-  width: 60px;
-  border-radius: 60px;
+  @include width-height(65px, 65px);
+  border-radius: 65px;
+  position: relative;
 }
 
 .social-links ul li i {
   font-size: 1.75rem;
-  color: #fff;
+  color: $white;
+  @include absolute-center();
 }
 
-li.facebook {
+.facebook {
   background: #3b5998;
 }
 
-li.twitter {
+.twitter {
   background: #55acee;
 }
 
-li.instagram {
+.instagram {
   background: #c32aa3;
 }
 
-li.linkedin {
+.linkedin {
   background: #125688;
 }
 
-li.github {
+.github {
   background: #24292e;
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-  .social-links ul li {
-    padding: 7.5px;
-    margin-right: 10px;
-    width: 40px;
-    border-radius: 40px;
-  }
   .social-links ul li i {
     font-size: 1.25rem;
+  }
+
+  .social-links ul li {
+    margin-right: 10px;
+  }
+
+  .social-links ul li a {
+    @include width-height(45px, 45px);
+    border-radius: 45px;
+  }
+
+  .nav-list li a {
+    font-size: 2.5rem;
+  }
+
+  #mainHeader h1, h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .social-links ul li i {
+    font-size: 1rem;
+  }
+
+  .social-links ul li a {
+    @include width-height(30px, 30px);
+    border-radius: 30px;
+  }
+
+  #mainHeader h1, h2 {
+    font-size: 2rem !important;
+  }
+
+  .nav-list li a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #bars {
+    top: 15px;
+    right: 15px;
+  }
+
+  .social-links {
+    top: 15px;
+    left: 15px;
+  }
+
+  .social-links ul li {
+    margin-right: 5px;
+  }
+
+  .social-links ul li a {
+    @include width-height(20px, 20px);
+    border-radius: 20px;
   }
 }

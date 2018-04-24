@@ -1,7 +1,5 @@
 <template>
   <div id="bars">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
+    <div v-for="n in 3" :key="n" :class="'bar' + n"></div>
   </div>
 </template>
