@@ -11,9 +11,9 @@
             <input type="email" class="form-control form-control-lg" placeholder="Email">
           </div>
           <div class="form-group">
-            <textarea class="form-control form-control-lg" placeholder="Message"></textarea>
+            <textarea class="form-control form-control-lg" rows="3" placeholder="Message"></textarea>
           </div>
-          <button class="btn btn-lg btn-success">Send</button>
+          <button class="btn btn-lg btn-success"><i class="fa fa-send mr-3"></i>Send</button>
         </form>
       </div>
     </div>

@@ -50,6 +50,20 @@ body {
   background: $white;
 }
 
+.form-control:focus {
+  border: 1px solid #ced4da;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+textarea:focus, input:focus{
+  outline: none !important;
+}
+
 /* Bars */
 
 #bars {
@@ -138,8 +152,33 @@ body {
   @include absolute-center();
 }
 
+.project-icons {
+  display: none;
+  z-index: 999;
+  @include absolute-center();
+}
+
+.project-icons i {
+  color: $white;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
 .img-circle {
   border-radius: 100%;
+}
+
+.hvr-shutter-out-horizontal {
+  background: transparent;
+}
+
+.hvr-shutter-out-horizontal::before {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+.hvr-shutter-out-horizontal:hover .project-icons {
+  display: block;
 }
 
 /* Main Header */
@@ -163,6 +202,14 @@ h2 {
 
 .form-header {
   font-size: 2rem !important;
+}
+
+.vc {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Social Media */

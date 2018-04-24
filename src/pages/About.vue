@@ -39,12 +39,4 @@
   .col-md-8 {
     position: relative;
   }
-
-  .vc {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
 </style>
