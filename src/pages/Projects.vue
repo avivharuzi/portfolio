@@ -1,5 +1,5 @@
 <template>
-  <app-content v-if="projects.length">
+  <app-content v-if="projects && projects.length">
     <div class="col-md-12 absolute-center">
       <div class="row justify-content-center">
         <div v-for="project in projects" :key="project.name" class="col-lg-3 col-md-6 col-sm-6 mb-5 mt-5">
