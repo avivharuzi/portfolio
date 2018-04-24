@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Color Converter",
+    "github": "https://github.com/avivharuzi/color-converter",
+    "website": "https://avivharuzi.github.io/color-converter",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/color-converter.png"
+  },
+  {
+    "name": "Material Picker",
+    "github": "https://github.com/avivharuzi/material-picker",
+    "website": "https://avivharuzi.github.io/material-picker/",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/material-picker.png"
+  },
+  {
+    "name": "Web Helper",
+    "github": "https://github.com/avivharuzi/webhelper",
+    "website": "https://avivharuzi.github.io/webhelper",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/webhelper.png"
+  },
+  {
+    "name": "IMDB API",
+    "github": "https://github.com/avivharuzi/imdb-api",
+    "website": "https://avivharuzi.github.io/imdb-api",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/imdb-api.png"
+  },
+  {
+    "name": "Calculator",
+    "github": "https://github.com/avivharuzi/calculator",
+    "website": "https://avivharuzi.github.io/calculator",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/calculator.png"
+  },
+  {
+    "name": "Chat",
+    "github": "https://github.com/avivharuzi/chat",
+    "website": "https://avivharuzi-chat.herokuapp.com",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/chat.png"
+  },
+  {
+    "name": "Shrinkon",
+    "github": "https://github.com/avivharuzi/shrinkon",
+    "website": "https://avivharuzi-shrinkon.herokuapp.com",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/shrinkon.png"
+  },
+  {
+    "name": "CRM",
+    "github": "https://github.com/avivharuzi/crm",
+    "website": "https://avivharuzi-crm.herokuapp.com/members",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/crm.png"
+  },
+  {
+    "name": "Blog",
+    "github": "https://github.com/avivharuzi/blog",
+    "website": "https://avivharuzi-blog.herokuapp.com",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/blog.png"
+  },
+  {
+    "name": "Yofi Li",
+    "website": "https://www.yafitharuzi.co.il",
+    "picture": "https://d1291oij40qk9o.cloudfront.net/images/projects/yofi-li.png"
+  }
+]
