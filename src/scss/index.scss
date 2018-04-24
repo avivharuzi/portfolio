@@ -109,6 +109,12 @@ body {
   display: inline-block;
 }
 
+.content p {
+  font-family: 'PT Serif', serif;
+  font-size: 1.50rem;
+  font-weight: 400;
+}
+
 .content-center {
   width: 75%;
   height: 75%;
@@ -119,6 +125,7 @@ body {
 .skill h5 {
   font-size: 2.5rem;
   margin: 0;
+  display: table;
   cursor: default;
   @include absolute-center();
 }
@@ -129,6 +136,10 @@ body {
 
 .absolute-center {
   @include absolute-center();
+}
+
+.img-circle {
+  border-radius: 100%;
 }
 
 /* Main Header */
@@ -209,6 +220,10 @@ h2 {
   .skill h5 {
     font-size: 2rem;
   }
+
+  .content p {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -239,6 +254,10 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+  .content p {
+    font-size: 1rem;
+  }
+
   .social-links ul li i {
     font-size: 1rem;
   }
