@@ -12,3 +12,8 @@ client/*.suo
 client/*.ntvs*
 client/*.njsproj
 client/*.sln
+
+# server
+
+server/node_modules
+server/.env
