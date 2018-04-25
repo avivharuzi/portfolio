@@ -5,6 +5,8 @@ const helmet = require('helmet');
 const cors = require('cors');
 const path = require('path');
 
+const routes = require('./routes/index');
+
 const app = express();
 
 app.use(helmet());
@@ -14,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+routes(app);
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));

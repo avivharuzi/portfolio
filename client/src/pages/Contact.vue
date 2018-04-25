@@ -1,7 +1,13 @@
 <template>
   <app-content>
     <div class="col-lg-6 col-md-12 absolute-center">
+      <app-loading :src="loadingSrc" :width="100" :height="100" :loading="isLoading"></app-loading>
       <h2 class="text-white form-header mb-3">Let's talk about the future 😏</h2>
+      <div v-if="messageForm && messageType" :class="'alert alert-' + messageType">
+        <p class="lead"><i class="fa mr-3"
+        :class="[{ 'fa-check': messageType === 'success' },
+        { 'fa-exclamation-circle': messageType === 'danger' }]"></i>{{ messageForm }}</p>
+      </div>
       <form @submit.prevent="onSubmit" autocomplete="off" novalidate>
         <div class="form-group">
           <input v-model="contact.fullname" v-validate="'required|alpha_spaces'" name="fullname"
@@ -26,6 +32,7 @@
 
 <script>
   import Content from '@/components/Content'
+  import Loading from '@/components/Loading'
 
   export default {
     data () {
@@ -34,7 +41,11 @@
           fullname: null,
           email: null,
           message: null
-        }
+        },
+        loadingSrc: 'https://cdn.avivharuzi.com/images/tools/loading.gif',
+        isLoading: false,
+        messageType: null,
+        messageForm: null
       }
     },
     methods: {
@@ -42,14 +53,36 @@
         let vm = this;
         this.$validator.validateAll().then((result) => {
           if (result) {
-            console.log(vm.contact)
+            this.setContact();
             return;
           }
         });
+      },
+      setContact () {
+        this.isLoading = true
+        this.$http.post('api/contact', this.contact)
+          .then(res => {
+            this.resetContact().then(() => this.$validator.reset())
+            this.messageType = 'success'
+            this.messageForm = res.body.message
+            this.isLoading = false
+          })
+          .catch(err => {
+            this.messageType = 'danger'
+            this.messageForm = err.body.message
+            this.isLoading = false
+          })
+      },
+      async resetContact () {
+        this.contact.fullname = null
+        this.contact.email = null
+        this.contact.message = null
+        this.errors.clear()
       }
     },
     components: {
-      'app-content': Content
+      'app-content': Content,
+      'app-loading': Loading
     }
   }
 </script>
