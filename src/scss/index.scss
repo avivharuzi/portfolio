@@ -275,6 +275,43 @@ h2 {
   .content p {
     font-size: 1.25rem;
   }
+
+  .project {
+    margin: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .project-icons i {
+    font-size: 1.5rem;
+  }
+
+  .content-center {
+    @include width-height(100%, 75%);
+  }
+
+  .me {
+    @include width-height(150px, 150px);
+    margin-bottom: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .vc {
+    position: none;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .absolute-center {
+    position: relative !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -297,6 +334,10 @@ h2 {
 
   .nav-list li a {
     font-size: 2.5rem;
+  }
+
+  .project img {
+    height: 100px !important;
   }
 
   #mainHeader h1, h2 {

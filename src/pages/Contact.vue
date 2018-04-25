@@ -1,6 +1,6 @@
 <template>
   <app-content>
-    <div class="col-md-6 absolute-center">
+    <div class="col-lg-6 col-md-12 absolute-center">
       <h2 class="text-white form-header mb-3">Let's talk about the future 😏</h2>
       <form @submit.prevent="onSubmit" autocomplete="off" novalidate>
         <div class="form-group">

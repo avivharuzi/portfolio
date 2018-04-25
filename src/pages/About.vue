@@ -2,8 +2,8 @@
   <app-content>
     <div class="col-md-12 absolute-center">
       <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <img src="https://s3.eu-central-1.amazonaws.com/avivharuzi.com/images/about/me.jpg" class="img-fluid img-circle">
+        <div class="col-lg-4 col-md-12 text-center">
+          <img src="https://s3.eu-central-1.amazonaws.com/avivharuzi.com/images/about/me.jpg" class="img-fluid me img-circle">
         </div>
         <div class="col-lg-8 col-md-12">
           <div class="vc">
