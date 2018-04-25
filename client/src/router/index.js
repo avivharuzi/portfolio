@@ -14,23 +14,39 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Home'
+      }
     },
     {
       path: '/projects',
-      component: Projects
+      component: Projects,
+      meta: {
+        title: 'Projects'
+      }
     },
     {
       path: '/skills',
-      component: Skills
+      component: Skills,
+      meta: {
+        title: 'Skills'
+      }
     },
     {
       path: '/about',
-      component: About
+      component: About,
+      meta: {
+      component: About,
+        title: 'About'
+      }
     },
     {
       path: '/contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        title: 'Contact'
+      }
     },
     {
       path: '*',

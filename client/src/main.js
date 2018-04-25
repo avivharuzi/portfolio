@@ -5,6 +5,11 @@ import VeeValidate from 'vee-validate';
 import App from './App'
 import router from './router'
 
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+
 import '@/scss/index.scss'
 
 Vue.use(VueResourse)
