@@ -1,5 +1,5 @@
 <template>
-  <app-content>
+  <app-content class="mt-mobile">
     <div class="skill col-lg-3 col-md-6 text-center hvr-buzz" v-for="skill in skills" :key="skill">
       <h5 class="bg-white" style="color: #000">{{ skill }}</h5>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <app-content>
-    <div class="col-md-12 absolute-center">
+    <div class="col-md-12 absolute-center mt-mobile">
       <div class="row">
         <div class="col-lg-4 col-md-12 text-center">
           <img src="https://s3.eu-central-1.amazonaws.com/avivharuzi.com/images/about/me.jpg" class="img-fluid me img-circle">

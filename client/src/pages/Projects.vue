@@ -1,6 +1,6 @@
 <template>
   <app-content v-if="projects && projects.length">
-    <div class="col-md-12 absolute-center">
+    <div class="col-md-12 absolute-center mt-mobile">
       <div class="row justify-content-center">
         <div v-for="project in projects" :key="project.name" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 mb-5 mt-5 text-center project">
           <div class="hvr-shutter-out-horizontal">

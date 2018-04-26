@@ -1,6 +1,6 @@
 <template>
   <app-content>
-    <div class="col-lg-6 col-md-12 absolute-center">
+    <div class="col-lg-6 col-md-12 absolute-center mt-mobile">
       <app-loading :src="loadingSrc" :width="100" :height="100" :loading="isLoading"></app-loading>
       <h2 class="text-white form-header mb-3">Let's talk about the future 😏</h2>
       <div v-if="messageForm && messageType" :class="'alert alert-' + messageType">
