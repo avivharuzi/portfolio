@@ -71,7 +71,7 @@ textarea:focus, input:focus{
 #bars {
   display: inline-block;
   z-index: 99;
-  position: fixed;
+  position: absolute;
   top: 35px;
   left: 35px;
   cursor: pointer;
