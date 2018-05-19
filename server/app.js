@@ -4,11 +4,13 @@ const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 const cors = require('cors');
 const path = require('path');
+const compression = require('compression');
 
 const routes = require('./routes/index');
 
 const app = express();
 
+app.use(compression({ threshold: 0 }));
 app.use(helmet());
 app.use(cors());
 app.use(bodyParser.json());
