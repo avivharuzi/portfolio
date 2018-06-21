@@ -54,6 +54,12 @@
     "picture": "https://cdn.avivharuzi.com/images/projects/blog.png"
   },
   {
+    "name": "Youtube API",
+    "github": "https://github.com/avivharuzi/youtube-api",
+    "website": "https://avivharuzi-youtube.herokuapp.com",
+    "picture": "https://cdn.avivharuzi.com/images/projects/youtube-api.png"
+  },
+  {
     "name": "Yofi Li",
     "website": "https://www.yafitharuzi.co.il",
     "picture": "https://cdn.avivharuzi.com/images/projects/yofi-li.png"
