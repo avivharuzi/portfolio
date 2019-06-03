@@ -1,2 +1,3 @@
-# portfolio
-my official portfolio site
+# Portfolio
+
+My official portfolio website.
