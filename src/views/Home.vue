@@ -8,6 +8,11 @@
     <h1 class="m-0 mb-3">Hello, I'm Aviv Haruzi</h1>
     <h2 class="m-0">I'm a full-stack developer</h2>
 
+    <div class="mt-4 d-flex justify-content-center align-items-center">
+      <p class="p-0 m-0"><i class="fa fa-map-marker mr-2"></i>Yehud, Israel<img
+        class="ml-2" width="25px" src="./../assets/images/isr.svg" alt="Israel"></p>
+    </div>
+
     <div class="mt-5">
       <SocialLinks/>
     </div>
@@ -31,6 +36,8 @@ export default {
 </script>
 
 <style lang="scss">
+  @import './../scss/abstracts';
+
   .home {
     h1, h2 {
       font-family: Caveat, sans-serif;
@@ -42,6 +49,10 @@ export default {
 
     h2 {
       font-size: 2.5rem;
+    }
+
+    p {
+      color: $color-gray-700;
     }
 
     img.img-profile {
