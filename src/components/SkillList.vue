@@ -12,7 +12,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class Skills extends Vue {
     skills: string[] = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'TYPESCRIPT', 'MYSQL',
-      'PHP', 'NODE.JS', 'MONGODB', 'ANGULAR', 'VUE.JS', 'DOCKER', 'AMAZON WEB SERVICES'];
+      'PHP', 'NODE.JS', 'MONGODB', 'ANGULAR', 'REACT.JS', 'VUE.JS', 'GIT', 'NGINX', 'APACHE', 'DOCKER', 'AMAZON_WEB_SERVICES'];
 }
 </script>
 

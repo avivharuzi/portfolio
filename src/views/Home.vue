@@ -19,6 +19,9 @@
 
     <div class="mt-5">
       <Skills/>
+      <div class="mt-3">
+        <p>and many more...</p>
+      </div>
     </div>
   </div>
 </template>
