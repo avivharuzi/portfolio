@@ -14,6 +14,10 @@
     </div>
 
     <div class="mt-5">
+      <About />
+    </div>
+
+    <div class="mt-5">
       <SocialLinks/>
     </div>
 
@@ -27,11 +31,13 @@
 </template>
 
 <script lang="ts">
+import About from '@/components/About.vue';
 import Skills from '@/components/SkillList.vue';
 import SocialLinks from '@/components/SocialLinkList.vue';
 
 export default {
   components: {
+    About,
     Skills,
     SocialLinks,
   },

@@ -5,3 +5,13 @@ html, body {
   background-color: $color-gray-50;
   font-family: Roboto, sans-serif;
 }
+
+a {
+  color: $color-purple-500;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color-purple-700;
+    text-decoration: underline;
+  }
+}
