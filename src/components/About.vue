@@ -1,14 +1,15 @@
 <template>
-  <p>Experienced full-stack developer specialist in <b>front-end</b>
-    and <b>back-end</b> development which focused
-    on the most in JavaScript world.
-    Working with PHP and Node.js in the back-end alongside Angular in the front-end.
-    With databases working with MySQL and MongoDB.
-    I love to learn and explore new things about technologies and programming every day.
-    Very passionate about open source projects you can explore my projects on my
-    Github <a target="_blank" :href="githubRepositoriesLink">repositories</a>.
-    For right now I am working in the Golan Telecom telecommunications company for more than 2 years
-    as a full-stack developer.
+  <p>I am an experienced full-stack developer, specialist in <b>front-end</b>
+    and <b>back-end</b> development. My fundamental work is focused on
+    JavaScript world with all of its diversities.
+    More into details, I am working for the most with PHP and Node.js as a back-end,
+    alongside with Angular in the front-end, with databases such as MySQL and MongoDB.
+    Exciting about learning and exploring new things about technologies
+    and programming every day.
+    You can explore some of my open-source projects on
+    <a target="_blank" :href="githubRepositoriesLink">Github</a>.
+    For right now I am working in the Golan Telecom telecommunications company
+    for more than 2 years as a full-stack developer.
     In my free time, I love to see movies and tv shows and play video games.</p>
 </template>
 
