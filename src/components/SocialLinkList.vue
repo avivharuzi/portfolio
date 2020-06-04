@@ -23,7 +23,7 @@ export default class SocialLinks extends Vue {
     { name: 'twitter', link: 'https://twitter.com/avivharuzi' },
     { name: 'facebook', link: 'https://www.facebook.com/people/Aviv-Haruzi/100001590224128' },
     { name: 'linkedin', link: 'https://www.linkedin.com/in/avivharuzi' },
-    { name: 'instagram', link: 'https://www.instagram.com/aviv_haruzi' },
+    { name: 'instagram', link: 'https://www.instagram.com/avivharuzi' },
     { name: 'github', link: 'https://github.com/avivharuzi' },
   ];
 }
