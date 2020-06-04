@@ -25,6 +25,7 @@ export default class SocialLinks extends Vue {
     { name: 'linkedin', link: 'https://www.linkedin.com/in/avivharuzi' },
     { name: 'instagram', link: 'https://www.instagram.com/avivharuzi' },
     { name: 'github', link: 'https://github.com/avivharuzi' },
+    { name: 'envelope', link: 'mailto:avivharuzi@gmail.com' },
   ];
 }
 </script>
