@@ -1,6 +1,6 @@
 <template>
   <p>I am an experienced full-stack developer, specialist in <b>front-end</b>
-    and <b>back-end</b> development. My fundamental work is focused on
+    and, <b>back-end</b> development. My fundamental work is focused on
     JavaScript world with all of its diversities.
     More into details, I am working for the most with PHP and Node.js as a back-end,
     alongside with Angular in the front-end, with databases such as MySQL and MongoDB.
