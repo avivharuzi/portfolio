@@ -1,7 +1,7 @@
 <template>
   <div class="home text-center">
     <figure class="pt-5 mb-4">
-      <img class="img-profile rounded-circle" alt="profile" width="200px" height="200px"
+      <img class="img-profile rounded-circle" alt="profile" width="200" height="200"
            src="./../assets/images/profile.jpeg">
     </figure>
 
@@ -10,7 +10,7 @@
 
     <div class="mt-4 d-flex justify-content-center align-items-center">
       <p class="p-0 m-0"><i class="fa fa-map-marker mr-2"></i>Yehud, Israel<img
-        class="ml-2" width="25px" src="./../assets/images/isr.svg" alt="Israel"></p>
+        class="ml-2" width="25" src="./../assets/images/isr.svg" alt="Israel"></p>
     </div>
 
     <div class="mt-5">

@@ -7,9 +7,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue } from 'vue-class-component';
 
-@Component
 export default class Skills extends Vue {
     skills: string[] = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'TYPESCRIPT', 'MYSQL',
       'PHP', 'NODE.JS', 'MONGODB', 'ANGULAR', 'REACT.JS', 'VUE.JS', 'GIT', 'NGINX', 'APACHE', 'DOCKER', 'AMAZON_WEB_SERVICES'];

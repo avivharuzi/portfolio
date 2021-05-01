@@ -10,14 +10,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue } from 'vue-class-component';
 
 interface SocialLink {
   name: string;
   link: string;
 }
 
-@Component
 export default class SocialLinks extends Vue {
   socialLinks: SocialLink[] = [
     { name: 'twitter', link: 'https://twitter.com/avivharuzi' },

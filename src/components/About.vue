@@ -14,9 +14,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue } from 'vue-class-component';
 
-@Component
 export default class About extends Vue {
   githubRepositoriesLink = 'https://github.com/avivharuzi?tab=repositories';
 }
