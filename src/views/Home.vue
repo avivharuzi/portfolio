@@ -9,7 +9,7 @@
     <h2 class="m-0">I'm a full-stack developer</h2>
 
     <div class="mt-4 d-flex justify-content-center align-items-center">
-      <p class="p-0 m-0"><i class="fa fa-map-marker mr-2"></i>Yehud, Israel<img
+      <p class="p-0 m-0"><i class="fa fa-map-marker mr-2"></i>Ramat Gan, Israel<img
         class="ml-2" width="25" src="./../assets/images/isr.svg" alt="Israel"></p>
     </div>
 
