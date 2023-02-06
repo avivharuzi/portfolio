@@ -4,6 +4,6 @@ My official portfolio website.
 
 https://www.avivharuzi.com
 
-Built with **Vue.js**
+Built with **React.js**
 
-Hosting with **Netlify** 
+Hosting with **Netlify**

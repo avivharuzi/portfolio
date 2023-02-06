@@ -1,17 +1,21 @@
-@import './../abstracts';
-
-html, body {
-  color: $color-gray-900;
-  background-color: $color-gray-50;
+html,
+body {
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-50);
   font-family: Roboto, sans-serif;
 }
 
 a {
-  color: $color-purple-500;
+  color: var(--color-purple-500);
   text-decoration: underline;
 
   &:hover {
-    color: $color-purple-700;
+    color: var(--color-purple-700);
     text-decoration: underline;
   }
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75;
 }

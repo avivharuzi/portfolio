@@ -1,7 +1,6 @@
-/*---------- Vendor ----------*/
-@import './vendor/bootstrap';
-@import './vendor/font-awesome';
+@use './vendor/bootstrap';
+@use './vendor/font-awesome';
 
-/*---------- Base ----------*/
-@import './base/typography';
-@import './base/common';
+@use './abstracts/variables';
+@use './base/typography';
+@use './base/common';

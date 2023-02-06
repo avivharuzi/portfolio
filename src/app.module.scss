@@ -1,0 +1,22 @@
+.App {
+  h1,
+  h2 {
+    font-family: Caveat, sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: var(--color-gray-700);
+  }
+}
+
+.ProfileImage {
+  object-fit: cover;
+}
